@@ -1,0 +1,26 @@
+project:
+  type: book
+
+book:
+  title: "Proyek Sain Data"
+  output-file: "quarto-crc"
+  author: "Fahad Alfan Danny Raharjo"
+  date: "10/12/2023"
+
+  chapters:
+    - index.qmd
+    - Rice_PSD.ipynb
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: krantz
+    keep-tex: true
+    include-in-header: latex/preamble.tex
+    include-before-body: latex/before_body.tex
+    include-after-body: latex/after_body.tex
